@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Novidades do Sistema IPTV</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Sistema IPTV</h1>
+            <nav>
+                <ul>
+                    <li><a href="/">Início</a></li>
+                    <li><a href="/add">Adicionar Notícia</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="news">
+        <div class="container">
+            <h2>Novidades</h2>
+            {% for news in news_items %}
+            <article>
+                <h3>{{ news[1] }}</h3>
+                <p>Data: {{ news[3] }}</p>
+                <p>{{ news[2] }}</p>
+            </article>
+            {% endfor %}
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Sistema IPTV. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>

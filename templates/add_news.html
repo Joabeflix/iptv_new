@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adicionar Notícia</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Adicionar Notícia</h1>
+            <nav>
+                <ul>
+                    <li><a href="/">Início</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="add-news">
+        <div class="container">
+            <h2>Nova Notícia</h2>
+            <form method="POST">
+                <label for="title">Título:</label>
+                <input type="text" id="title" name="title" required>
+
+                <label for="content">Conteúdo:</label>
+                <textarea id="content" name="content" required></textarea>
+
+                <label for="date">Data:</label>
+                <input type="date" id="date" name="date" required>
+
+                <button type="submit">Adicionar Notícia</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Sistema IPTV. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
